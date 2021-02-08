@@ -12,8 +12,8 @@ Library version is henceforth referred to as 'X.Y.Z', to find out what release v
 
 Easiest way to import the library into your project is using the Maven repository:
 
-1. Add JCenter repository 
-    - URL: https://jcenter.bintray.com/
+1. Add Maven Central repository 
+    - URL: https://repo1.maven.org/maven2/
 2. Import dependency into your project: 
     - GroupId: `io.mx51`
     - ArtifactId: `spi-client-java`
@@ -27,7 +27,7 @@ Declare the repository:
 
 ```
 repositories {
-    jcenter()
+    mavenCentral()
 }
 ```
 
@@ -46,8 +46,8 @@ Configure the repository to be used for dependency resolution:
 ```
 <repositories>
     <repository>
-        <id>jcenter</id>
-        <url>https://jcenter.bintray.com/</url>
+        <id>central</id>
+        <url>https://repo1.maven.org/maven2</url>
     </repository>
 </repositories>
 ```
